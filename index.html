@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEXE ANALISTA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo.png" alt="Logo JEXE ANALISTA" class="logo">
+        <h1>𝐉𝐄𝐗𝐄 𝐀𝐍𝐀𝐋𝐈𝐒𝐓𝐀</h1>
+        <p>Verificación para acceder al canal de apuestas deportivas.</p>
+        
+        <form id="verificationForm">
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="phone">Número de teléfono (Colombia):</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Ej: +57 3001234567">
+            
+            <label for="knowledge">¿Tienes conocimiento en apuestas deportivas?</label>
+            <select id="knowledge" name="knowledge" required>
+                <option value="">Selecciona una opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+            
+            <label for="interest">¿Estás interesado en ganar dinero de manera responsable con análisis deportivos?</label>
+            <select id="interest" name="interest" required>
+                <option value="">Selecciona una opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+            
+            <button type="button" onclick="verifyUser()">Verificar y Acceder</button>
+        </form>
+        
+        <div id="accessLink" style="display:none;">
+            <p>Has sido verificado exitosamente. Accede al canal:</p>
+            <a href="https://t.me/+UJSWZupE86s3MDhh" target="_blank">clic aqui para acceder</a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
